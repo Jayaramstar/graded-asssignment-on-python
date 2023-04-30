@@ -14,8 +14,9 @@ else:
     totalamount=total+250
     print("total amount including GST and delivery charges= ",totalamount)
 
-#Question 2 soution
-string1=input("Emter a strimg:")
+#Question 2 solution
+string1=input("Emter a string:")
+string1=string1.lower()
 i=0
 j=len(string1)
 a=str()
@@ -25,6 +26,10 @@ for i in range(j):
     i+=1
     j-=1
 print(*a,sep=',')
+
+
+
+
 
 
 
