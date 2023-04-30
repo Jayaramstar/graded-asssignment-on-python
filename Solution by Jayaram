@@ -1,0 +1,30 @@
+#Question 1 solution
+Book1=int(input("enter the number of copies of Introduction to python programming you need:"))
+Book2=int(input("enter the number of copies of Python Libraries Cookbook you need:"))
+Book3=int(input("enter the number of copies of Data Science in Python you need:"))
+cost1=499
+cost2=855
+cost3=645
+if (Book1<0 or Book2<0 or Book3<0):
+    print("Sorry,please enter a whole number as input")
+
+else:
+    sum=(cost1*Book1)+(cost2*Book2)+(cost3*Book3)
+    total=sum+(sum*0.12)
+    totalamount=total+250
+    print("total amount including GST and delivery charges= ",totalamount)
+
+#Question 2 soution
+string1=input("Emter a strimg:")
+i=0
+j=len(string1)
+a=str()
+for i in range(j):
+    if string1[i] not in a:
+        a=a+(string1[i])
+    i+=1
+    j-=1
+print(*a,sep=',')
+
+
+
